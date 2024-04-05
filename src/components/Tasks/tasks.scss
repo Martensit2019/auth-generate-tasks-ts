@@ -1,0 +1,7 @@
+.vue-grid-item:not(.vue-grid-placeholder) {
+  background-color: $main-bg-color;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid $main-border;
+  box-shadow: $main-box-shadow;
+}

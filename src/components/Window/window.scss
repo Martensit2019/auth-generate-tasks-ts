@@ -1,0 +1,14 @@
+.window {
+  width: 100%;
+  border-radius: 10px;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $active;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

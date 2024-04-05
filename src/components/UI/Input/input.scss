@@ -1,0 +1,29 @@
+.label {
+  font-size: 14px;
+  font-weight: 700;
+}
+.input {
+  width: 100%;
+  border: 1px solid $primary;
+  padding: 10px 15px;
+  &__group {
+    margin-bottom: 20px;
+  }
+}
+input:focus {
+  border: 1px solid $primary-hover;
+}
+.btn-search {
+  position: absolute;
+  right: 0;
+  &__icon {
+    color: $primary;
+  }
+}
+.btn-clear {
+  position: absolute;
+  right: 30px;
+  &__icon {
+    color: $primary;
+  }
+}

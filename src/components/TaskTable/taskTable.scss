@@ -1,0 +1,67 @@
+.table {
+  width: 100%;
+  border-spacing: 0;
+  &__header {
+    background-color: $active;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    th {
+      padding: 5px;
+      border-right: 1px solid white;
+      border-top: 1px solid white;
+    }
+  }
+  td {
+    border-bottom: 1px solid $active;
+    padding: 5px;
+  }
+  &__checkbox {
+    width: 40px;
+    // display: flex;
+    // justify-content: center;
+  }
+  .center {
+    text-align: center;
+  }
+  .status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .btn-action {
+    cursor: pointer;
+    color: $primary;
+    margin: 0 7px;
+    &.red {
+      color: $danger;
+    }
+  }
+
+  td {
+    font-size: 14px;
+  }
+  .resize-col {
+    position: absolute;
+    width: 5px;
+    top: 0;
+    right: 0;
+    height: 100px;
+    &:hover {
+      border-right: 1px dashed $danger;
+      cursor: col-resize;
+    }
+  }
+  .resize-row {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    &:hover {
+      border-bottom: 1px dashed $danger;
+      cursor: row-resize;
+    }
+  }
+}
